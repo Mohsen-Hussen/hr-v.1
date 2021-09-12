@@ -175,7 +175,7 @@
 
 /*start heroBg*/
 .heroBg .featBg {
-  background-image: url("../../img-v.1/faq-bg.jpg");
+  background-image: url("../../img-v.1/details-bg.jpg");
   background-size: cover;
   height: 45vh;
   width: 100vw;
@@ -203,25 +203,55 @@
     font-weight: 900;
     letter-spacing: 2px; }
 
-/*start faq*/
-.faq {
-  background: #694dfd;
-  background: linear-gradient(90deg, #694dfd 0%, rgba(25, 27, 100, 0.5522584034) 50%); }
-  .faq .card {
-    border: none; }
-    .faq .card .card-header {
-      border-bottom: 2px solid #694dfd;
-      background-color: #fff;
-      margin-bottom: -1px; }
-      .faq .card .card-header i {
-        color: #694dfd;
-        font-size: 1.3rem; }
-      .faq .card .card-header button {
-        color: #191b64;
-        text-decoration: none;
-        font-size: 1.3rem;
-        font-weight: bold; }
-        .faq .card .card-header button:focus {
-          box-shadow: none; }
+/*start moduel first section*/
+.modFirst {
+  /*start carousel*/ }
+  .modFirst .carousel-item {
+    height: 300px;
+    position: relative; }
+    .modFirst .carousel-item::before {
+      content: '';
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-color: #0000000f;
+      width: 100%;
+      height: 100%; }
+  .modFirst h2 {
+    color: #191b64;
+    font-weight: bold;
+    font-size: 3rem; }
+  .modFirst .carousel-control-prev-icon, .modFirst .carousel-control-next-icon {
+    background-color: #694dfd;
+    padding: 10px;
+    border-radius: 50%; }
 
-/*# sourceMappingURL=faq.css.map */
+.modSecond h5 {
+  color: #694dfd;
+  font-size: 1.1rem; }
+.modSecond h2 {
+  color: #191b64;
+  font-weight: bold;
+  font-size: 2rem; }
+.modSecond .card {
+  border: none;
+  margin-bottom: 30px; }
+  .modSecond .card .card-header {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px;
+    border-bottom: none; }
+    .modSecond .card .card-header i {
+      color: #694dfd;
+      font-size: 1.3rem; }
+    .modSecond .card .card-header button {
+      color: #191b64;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: bold; }
+      .modSecond .card .card-header button:focus {
+        box-shadow: none; }
+  .modSecond .card .card-body {
+    padding-top: 0; }
+
+/*# sourceMappingURL=details.css.map */

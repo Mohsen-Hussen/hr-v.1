@@ -29,14 +29,14 @@ $secColor: #DCD9D9;
         margin-bottom: 20px;
         padding-bottom: 20px;
         position: relative;
-        color: $mainColor;
+        color: $altColor;
         &::before {
             content: '';
             position: absolute;
             display: block;
             width: 120px;
             height: 1px;
-            background: $altColor;
+            background: $secColor;
             bottom: 1px;
             left: calc(50% - 60px);
         }
@@ -46,7 +46,7 @@ $secColor: #DCD9D9;
             display: block;
             width: 40px;
             height: 3px;
-            background: $secColor;
+            background: $mainColor;
             bottom: 0;
             left: calc(50% - 20px);
         }
