@@ -1,0 +1,228 @@
+$mainColor : #694dfd;
+$altColor: #191b64;
+$secColor: #DCD9D9;
+
+@font-face {
+    src: url(../fonts/Cairo-Black.ttf);
+    src: url(../fonts/Cairo-Bold.ttf);
+    src: url(../fonts/Cairo-Regular.ttf);
+    src: url(../fonts/Cairo-Light.ttf);
+    font-family: cairo;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'cairo', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* common classes*/
+.sectionTitle {
+    text-align: center;
+    padding-bottom: 30px;
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        color: $mainColor;
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 120px;
+            height: 1px;
+            background: $altColor;
+            bottom: 1px;
+            left: calc(50% - 60px);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: $secColor;
+            bottom: 0;
+            left: calc(50% - 20px);
+        }
+    }
+}
+
+/*active li at navbar*/
+.navActive {
+    color: $mainColor !important;
+    border-bottom: 2px solid $mainColor;
+}
+
+/* buttons */
+.customBtn {
+    border-color: $mainColor;
+    background-color: $mainColor;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    &:hover {
+        background-color: #fff;
+        color: $mainColor;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+.altBtn {
+    border-color: $altColor;
+    background-color: #fff;
+    color: $altColor;
+    font-weight: bold;
+    letter-spacing: 1px;
+    &:hover {
+        background-color: $altColor;
+        color: #fff;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+.coloredBtn {
+    border-color: #fff;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    &:hover {
+        background-color: #fff;
+        color: $mainColor;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+.whiteBtn {
+    border-color: $mainColor;
+    background-color: #fff;
+    color: $mainColor;
+    font-weight: bold;
+    letter-spacing: 1px;
+    &:hover {
+        background-color: $mainColor;
+        color: #fff;
+        transition: all 0.5s ease-in-out;
+    }
+}
+@media (min-width : 992px) and (max-width : 1200px) {
+    .customBtn , .altBtn , .coloredBtn , .whiteBtn{
+        font-size: 0.8rem;
+    }
+}
+
+/*box shadoow */
+@mixin BoxShadow ($HrShadow,$VrShadow,$Blur,$SpreadRadius8px,$rgba) {
+    box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
+    -webkit-box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
+    -moz-box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
+}
+
+/* Sweep To Top */
+.hvr-sweep-to-top {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.hvr-sweep-to-top::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #694dfd;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
+    color: white;
+}
+.hvr-sweep-to-top:hover:after, .hvr-sweep-to-top:focus:after, .hvr-sweep-to-top:active:after {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+/*footer*/
+.foot {
+    background: url(../../img-v.1/footer-bg-3.png) no-repeat scroll center bottom transparent;
+    background-size: cover;
+    h4 {
+        color: $altColor;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+    a {
+        text-decoration: none;
+        color: $altColor;
+        transition: all 0.5s ease;
+        &:hover {
+            color: $mainColor;
+            text-decoration: underline;
+        }
+    }
+    .fab {
+        font-size: 1.5rem;
+        color: #000;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .fa-facebook-f {
+        &:hover {
+            color: #1877f2;
+        }
+    }
+    .fa-twitter {
+        &:hover {
+            color: #1da1f2;
+        }
+    }
+    .fa-instagram {
+        &:hover {
+            color: #e1306c;
+        }
+    }
+    .fa-linkedin-in {
+        &:hover {
+            color: #0077b5;
+        }
+    }
+    .footInfo {
+        a{
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        .fa-google-play {
+            font-size: 0.8rem;
+            color: $altColor;
+        }
+    }
+}
