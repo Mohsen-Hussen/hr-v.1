@@ -208,11 +208,12 @@
   background: #694dfd;
   background: linear-gradient(90deg, #694dfd 0%, rgba(25, 27, 100, 0.5522584034) 50%); }
   .faq .card {
-    border: none; }
+    border: none;
+    margin-bottom: 30px;
+    background-color: transparent; }
     .faq .card .card-header {
-      border-bottom: 2px solid #694dfd;
-      background-color: #fff;
-      margin-bottom: -1px; }
+      border-bottom: none;
+      background-color: rgba(255, 255, 255, 0.8); }
       .faq .card .card-header i {
         color: #694dfd;
         font-size: 1.3rem; }
@@ -223,5 +224,8 @@
         font-weight: bold; }
         .faq .card .card-header button:focus {
           box-shadow: none; }
+    .faq .card .card-body {
+      padding-top: 0;
+      background-color: rgba(255, 255, 255, 0.8); }
 
 /*# sourceMappingURL=faq.css.map */
