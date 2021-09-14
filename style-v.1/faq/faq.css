@@ -213,7 +213,7 @@
     background-color: transparent; }
     .faq .card .card-header {
       border-bottom: none;
-      background-color: rgba(255, 255, 255, 0.8); }
+      background-color: rgba(255, 255, 255, 0.9); }
       .faq .card .card-header i {
         color: #694dfd;
         font-size: 1.3rem; }
@@ -226,6 +226,6 @@
           box-shadow: none; }
     .faq .card .card-body {
       padding-top: 0;
-      background-color: rgba(255, 255, 255, 0.8); }
+      background-color: rgba(255, 255, 255, 0.9); }
 
 /*# sourceMappingURL=faq.css.map */
