@@ -42,24 +42,26 @@
 
 /*start faq*/
 .faq {
-    background: rgb(105,77,253);
-    background: linear-gradient(90deg, rgba(105,77,253,1) 0%, rgba(25,27,100,0.5522584033613445) 50%);
+    // background: rgb(105,77,253);
+    // background: linear-gradient(90deg, rgba(105,77,253,1) 0%, rgba(25,27,100,0.5522584033613445) 50%);
     .card {
         border: none;
         margin-bottom: 30px;
         background-color: transparent;
+        margin-bottom: 20px;
         .card-header {
             border-bottom: none;
             background-color: rgba(255, 255, 255, 0.9);
             i {
-                color: $mainColor;
-                font-size: 1.3rem;
+                color: $altColor;
+                font-size: 1.1rem;
             }
             button {
                 color: $altColor;
                 text-decoration: none;
-                font-size: 1.3rem;
+                font-size: 1.1rem;
                 font-weight: bold;
+                @include BoxShadow(0px, 5px, 22px, 0px, rgba(0, 0, 0, 0.09));
                 &:focus {
                     box-shadow: none;
                 }
