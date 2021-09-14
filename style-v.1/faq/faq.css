@@ -204,29 +204,36 @@
     letter-spacing: 2px; }
 
 /*start faq*/
-.faq .card {
-  border: none;
-  margin-bottom: 30px;
-  background-color: transparent;
-  margin-bottom: 20px; }
-  .faq .card .card-header {
-    border-bottom: none;
-    background-color: rgba(255, 255, 255, 0.9); }
-    .faq .card .card-header i {
-      color: #191b64;
-      font-size: 1.1rem; }
-    .faq .card .card-header button {
-      color: #191b64;
-      text-decoration: none;
-      font-size: 1.1rem;
-      font-weight: bold;
-      box-shadow: 0px 5px 22px 0px rgba(0, 0, 0, 0.09);
-      -webkit-box-shadow: 0px 5px 22px 0px rgba(0, 0, 0, 0.09);
-      -moz-box-shadow: 0px 5px 22px 0px rgba(0, 0, 0, 0.09); }
-      .faq .card .card-header button:focus {
-        box-shadow: none; }
-  .faq .card .card-body {
-    padding-top: 0;
-    background-color: rgba(255, 255, 255, 0.9); }
+.faq {
+  padding: 60px 0; }
+  .faq .card {
+    border: none;
+    background-color: transparent;
+    margin-bottom: 8px; }
+    .faq .card .card-header {
+      border-bottom: none;
+      background-color: rgba(255, 255, 255, 0.7); }
+      .faq .card .card-header button {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: bold;
+        background-color: #694dfd;
+        box-shadow: 0px 5px 22px 0px rgba(0, 0, 0, 0.09);
+        -webkit-box-shadow: 0px 5px 22px 0px rgba(0, 0, 0, 0.09);
+        -moz-box-shadow: 0px 5px 22px 0px rgba(0, 0, 0, 0.09); }
+        .faq .card .card-header button:focus {
+          box-shadow: none; }
+        .faq .card .card-header button i {
+          color: #fff;
+          font-size: 1.1rem; }
+      .faq .card .card-header button.collapsed {
+        background-color: #fff;
+        color: #191b64; }
+        .faq .card .card-header button.collapsed i {
+          color: #191b64; }
+    .faq .card .card-body {
+      padding-top: 0;
+      background-color: rgba(255, 255, 255, 0.9); }
 
 /*# sourceMappingURL=faq.css.map */
