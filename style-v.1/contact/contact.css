@@ -215,4 +215,46 @@
       font-size: 1.3rem;
       font-weight: bold; }
 
+/*start contactForm*/
+.contactForm {
+  padding: 60px 0; }
+  .contactForm .formText h5 {
+    color: #694dfd;
+    font-weight: bold;
+    letter-spacing: 1px; }
+  .contactForm .formText h1 {
+    color: #191b64;
+    font-weight: bold;
+    font-size: 3.3rem; }
+  .contactForm .contactIcon ul li {
+    background-color: #f1f2f6;
+    padding: 10px 13px;
+    border-radius: 50%; }
+    .contactForm .contactIcon ul li a {
+      text-decoration: none; }
+      .contactForm .contactIcon ul li a i {
+        color: #717580;
+        font-size: 1.1rem; }
+  .contactForm .contactIcon ul .twitter {
+    background-color: #694dfd; }
+    .contactForm .contactIcon ul .twitter .fa-twitter {
+      color: #fff;
+      font-size: 1.3rem; }
+  .contactForm form .form-control {
+    height: 60px;
+    padding: 0 15px;
+    border: none;
+    background: #f1f2f6;
+    box-shadow: none; }
+    .contactForm form .form-control:foucs {
+      background-color: #f1f2f6;
+      box-shadow: none; }
+    .contactForm form .form-control::placeholder {
+      color: #949494;
+      font-weight: bold;
+      font-size: 1.1rem; }
+  .contactForm form textarea {
+    padding: 10px 20px !important;
+    height: 220px !important; }
+
 /*# sourceMappingURL=contact.css.map */
