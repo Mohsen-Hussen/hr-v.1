@@ -256,5 +256,9 @@
   .contactForm form textarea {
     padding: 10px 20px !important;
     height: 220px !important; }
+  .contactForm form button {
+    border-radius: 10px;
+    padding: 18px 26px 16px;
+    font-size: 1.1rem; }
 
 /*# sourceMappingURL=contact.css.map */
