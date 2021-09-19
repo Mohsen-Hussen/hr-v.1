@@ -10,7 +10,7 @@ $(document).ready(() => {
         }
     });
 
-    /*owl carousel activated*/
+    /*owl carousel activated at blogs details*/
     $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
@@ -19,23 +19,26 @@ $(document).ready(() => {
         autoplayTimeout:3000,
         autoplayHoverPause:true,
         nav: true,
-        // lazyLoad:true,
         responsive:{
             0:{
                 items:1
-            },
-            // 720:{
-            //     items:2
-            // },
-            // 960:{
-            //     items:3
-            // }
+            }
         }
-    })
-    // $('.play').on('click',function(){
-    //     owl.trigger('play.owl.autoplay',[1000])
-    // })
-    // $('.stop').on('click',function(){
-    //     owl.trigger('stop.owl.autoplay')
-    // })
+    });
+});
+
+/*owl carousel activated at home page*/
+$('.testimonials-carousel').owlCarousel({
+    loop:true,
+    margin:20,
+    responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    nav: true,
+    responsive:{
+        0:{
+            items:2
+        }
+    }
 });
