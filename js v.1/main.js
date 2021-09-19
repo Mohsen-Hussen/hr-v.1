@@ -11,7 +11,7 @@ $(document).ready(() => {
     });
 
     /*owl carousel activated at blogs details*/
-    $('.owl-carousel').owlCarousel({
+    $('.blogDetail .owl-carousel').owlCarousel({
         loop:true,
         margin:10,
         responsiveClass:true,
@@ -25,20 +25,20 @@ $(document).ready(() => {
             }
         }
     });
-});
 
-/*owl carousel activated at home page*/
-$('.testimonials-carousel').owlCarousel({
-    loop:true,
-    margin:20,
-    responsiveClass:true,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    nav: true,
-    responsive:{
-        0:{
-            items:2
+    /*owl carousel activated at home page*/
+    $('.testimonials-carousel.owl-carousel').owlCarousel({
+        loop:true,
+        margin:20,
+        responsiveClass:true,
+        autoplay:true,
+        autoplayTimeout:4000,
+        autoplayHoverPause:true,
+        nav: false,
+        responsive:{
+            0:{
+                items:2
+            }
         }
-    }
+    });
 });
