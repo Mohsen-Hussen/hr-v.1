@@ -226,3 +226,43 @@ $secColor: #DCD9D9;
         }
     }
 }
+
+/*style of main panner at all syb pages*/
+.heroBg {
+    .featBg {
+        background-image: url('../../img-v.1/feat-bg.jpg');
+        background-size: cover;
+        height: 45vh;
+        width: 100vw;
+        background-position: center;
+        position: relative;
+        &::before {
+            content: '';
+            top: 0;
+            left: 0;
+            position: absolute;
+            background-color: #00000066;
+            width: 100%;
+            height: 100%;
+        }
+        .card-title {
+            position: relative;
+            z-index: 50;
+        }
+        .breadText {
+            a {
+                color: $altColor;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+        }
+        .card-img {
+            height: 60vh;
+        }
+        .contactText {
+            color: #fff;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+    }
+}

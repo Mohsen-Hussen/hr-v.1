@@ -558,3 +558,570 @@
         }
     }
 }
+
+/*********Feature Page ********/
+/*start feat*/
+.feat {
+    .card {
+        border: none;
+        @include BoxShadow(0px , 5px , 40px , 0px , rgba(145, 64, 64, 0.09));
+        img {
+            width: 83px;
+            height: 65px;
+        }
+        .card-title {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: $altColor;
+        }
+        a {
+            position: relative;
+            border: none;
+            span {
+                position: absolute;
+                width: 25px;
+                height: 2px;
+                background-color: $mainColor;
+                right: -20px;
+                bottom: 15px;
+            }
+            &:hover{
+                background-color: #fff;
+                color: $mainColor;
+                transform: translate(0, 10px);
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            .card-title {
+                color: $mainColor;
+                transition: all 1s ease-in-out;
+            }
+        }
+    }
+}
+
+/*********Request demo Page ********/
+/*img*/ 
+.left {
+    .leftImg {
+        h1 {
+            font-size: 2.8rem;
+            font-weight: bold;
+            color: $altColor;
+        }
+        p {
+            font-size: 1.5rem;
+            color: $altColor;
+        }
+    }
+}
+
+/*right*/
+.right {
+    h1 {
+        color: $altColor;
+        // font-size: 34px;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    .link {
+        text-decoration: none;
+        color: $altColor;
+        font-size: 0.9rem;
+    }
+    .customBtn {
+        background-color: #fff;
+        color: $mainColor;
+        width: 125px;
+    }
+    form {
+        ::placeholder {
+            color: #b3b3b3;
+        }
+        .customBtn {
+            background-color: $mainColor;
+            color: #fff;
+        }
+        .form-control {
+            color: #b3b3b3;
+            font-size: 1.2rem;
+            border: none;
+            border-bottom: 1px solid rgba(0 , 0 , 0 , 0.1);
+            border-radius: 0;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        a {
+            text-decoration: underline;
+            color: $altColor;
+        }
+    }
+}
+
+/*********modules Page ********/
+/*modules*/
+.modules {
+    .cardPrimary {
+        @include BoxShadow(0px , 5px , 40px , 0px , rgba(145, 64, 64, 0.09));
+        border-radius: 8px;
+        border: none;
+        i {
+            color: $mainColor;
+        }
+        .card-title {
+            color: $altColor;
+            font-size: 1.3rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .card-text {
+            font-size: 0.9rem;
+            color: $mainColor;
+            i {
+                font-size: 0.7rem;
+            }
+        }
+        &:hover {
+            h6 , h3 , i , .card-title , .card-text , p {
+                color: #fff !important;
+            }
+        }
+    }
+}
+
+/*********blog Page ********/
+/*blog*/
+.blog {
+    padding: 60px 0 0 0;
+    h6 {
+        color: $mainColor;
+    }
+    h1 {
+        color: $altColor;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    .card {
+        border: none;
+        img {
+            border-radius: 12px;
+            &:hover {
+                filter: brightness(0.7);
+                cursor: pointer;
+                transition: all 1s ease-in-out;
+            }
+        }
+        .card-body {
+            padding: 1.25rem 0;
+            i {
+                color: $mainColor;
+            }
+            span {
+                color: $altColor;
+            }
+        }
+        .card-title {
+            color: $altColor;
+            font-size: 1.5rem;
+            font-weight: bold;
+            &:hover {
+                color: $mainColor;
+                cursor: pointer;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+        a {
+            .card-text {
+                color: $mainColor;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/*********blog details Page ********/
+/*blog details*/
+.blogDetail {
+    padding: 60px 0 0 0;
+    .card {
+        border: none;
+        .owl-carousel {
+            .owl-nav {
+                .owl-prev {
+                    left: 30px;
+                }
+                .owl-next {
+                    right: 30px;
+                }
+                .owl-prev , .owl-next {
+                    position: absolute;
+                    top: 50%;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                }
+                .owl-prev span , .owl-next span {
+                    font-size: 3rem;
+                    font-weight: bold;
+                    line-height: 16px;
+                }
+                .owl-prev span:active , .owl-next span:active ,.owl-prev span:hover , .owl-next span:hover {
+                    color: $mainColor;
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+            img {
+                border-radius: 10px;
+            }
+        }
+        .card-body {
+            padding: 1.25rem 0;
+            i {
+                color: $mainColor;
+            }
+            span {
+                color: $altColor;
+                font-weight: bold;
+                font-size: 1.1rem;
+            }
+        }
+        .card-title {
+            color: $altColor;
+            font-size: 2rem;
+            font-weight: bold;
+            &:hover {
+                color: $mainColor;
+                cursor: pointer;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    }
+}
+
+/*********contact Page ********/
+/*contactCards*/
+.contactCards {
+    padding: 60px 0;
+    .card {
+        border: none;
+        border-radius: 10px;
+        @include BoxShadow(0px, 0px, 16px, 0px, rgba(4, 59, 80, 0.1));
+        .img{
+            width: 80px;
+            height: 80px;
+            background-color: #eee;
+            padding: 15px;
+            border-radius: 50%;
+        }
+        .card-title {
+            a {
+                color: $altColor;
+                text-decoration: none;
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/*start contactForm*/
+.contactForm {
+    padding: 60px 0;
+    .formText {
+        h5 {
+            color: $mainColor;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        h1 {
+            color: $altColor;
+            font-weight: bold;
+            font-size: 3.3rem;
+        }
+    }
+    .contactIcon {
+        ul {
+            li {
+                background-color: #f1f2f6;
+                padding: 10px 13px;
+                border-radius: 50%;
+                a {
+                    text-decoration: none;
+                    i {
+                        color: #717580;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+            .twitter {
+                background-color: $mainColor;
+                .fa-twitter {
+                    color: #fff;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+    form {
+        .form-control {
+            height: 60px;
+            padding: 0 15px;
+            border: none;
+            background: #f1f2f6;
+            box-shadow: none;
+            border-radius: 4px;
+            &:foucs {
+                background-color: #f1f2f6;
+                box-shadow: none ;
+            }
+            &::placeholder {
+                color: #949494;
+                font-weight: bold;
+                font-size: 1.1rem;
+            }
+        }
+        textarea {
+            padding: 10px 20px !important;
+            height: 220px !important;
+        }
+        button {
+            border-radius: 10px;
+            padding: 18px 26px 16px;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+/*location*/
+.location {
+    padding: 60px 0 0 0;
+}
+
+/*********details Page ********/
+/*start moduel first section*/
+.modFirst {
+    /*start carousel*/
+    .carousel-item {
+        height: 300px;
+        position: relative;
+        &::before {
+            content: '';
+            top: 0;
+            left: 0;
+            position: absolute;
+            background-color: #0000000f;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    h2 {
+        color: $altColor;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+    .carousel-control-prev-icon , .carousel-control-next-icon {
+        background-color: $mainColor;
+        padding: 10px;
+        border-radius: 50%;
+    }
+}
+
+.modSecond {
+    h5 {
+        color: $mainColor;
+        font-size: 1.1rem;
+    }
+    h2 {
+        color: $altColor;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .card {
+        border: none;
+        margin-bottom: 30px;
+        .card-header {
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.05);
+            margin-bottom: 15px;
+            border-bottom: none;
+            i {
+                color: $mainColor;
+                font-size: 1.3rem;
+            }
+            button {
+                color: $altColor;
+                text-decoration: none;
+                font-size: 1.3rem;
+                font-weight: bold;
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+        .card-body {
+            padding-top: 0;
+        }
+    }
+}
+
+/*********faq Page ********/
+/*start faq*/
+.faq {
+    padding: 60px 0;
+    .card {
+        border: none;
+        background-color: transparent;
+        margin-bottom: 8px;
+        .card-header {
+            border-bottom: none;
+            background-color: rgba(255, 255, 255, 0.7);
+            button {
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.1rem;
+                font-weight: bold;
+                background-color: $mainColor;
+                @include BoxShadow(0px, 5px, 22px, 0px, rgba(0, 0, 0, 0.09));
+                &:focus {
+                    box-shadow: none;
+                }
+                i {
+                    color: #fff;
+                    font-size: 1.1rem;
+                }
+            }
+            button.collapsed {
+                background-color: #fff;
+                color: $altColor;
+                i {
+                    color: $altColor;
+                }
+            }
+        }
+        .card-body {
+            padding-top: 0;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+    }
+}
+
+/*********pricing Page ********/
+/*pricing*/
+.pricing {
+    padding: 60px 0;
+    .ulTime {
+        width: 255px;
+        height: 36px;
+        padding: 4px;
+        border-radius: 10px;
+        background: #EFF0FF;
+        margin-left: calc((100% - 30%) / 2);
+        li {
+            flex: 1;
+            font-weight: bold;
+            line-height: 10px;
+            font-size: 14px;
+            a {
+                color: #747474;
+                letter-spacing: 1px;
+                transition: all .5s ease-in-out;
+                &.active {
+                    color: $mainColor;
+                    letter-spacing: 1px;
+                    background-color: #fff;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+    .card {
+        padding: 35px 60px;
+        border-radius: 17px;
+        .card-title {
+            h1 {
+                font-weight: bold;
+                color: $altColor;
+            }
+            .onlyWord {
+                color: #FF8A00;
+                font-size: 1.1rem;
+            }
+            .priceWord {
+                color: #FF8A00;
+                font-size: 3rem;
+                font-weight: bold;
+            }
+        }
+        .card-text {
+            ul {
+                font-size: 18px;
+                color: $altColor;
+                letter-spacing: 1px;
+                i {
+                    padding-left: 5px;
+                    color: $mainColor;
+                }
+            }
+        }
+        .priceLink {
+            a {
+                font-weight: bold;
+                color: $altColor;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    /*special card*/
+    .coloredPriceCard {
+        background-color: $mainColor;
+        position: relative;
+        .mostPop {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #FF8A00;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 10px;
+            line-height: 1;
+            font-weight: bold;
+            padding: 5px 7px;
+            letter-spacing: 1px;
+        }
+        p {
+            color: #fff !important;
+        }
+        .card-title {
+            h1 {
+                color: #fff;
+            }
+        }
+        .card-text {
+            ul {
+                color: #fff;
+                i {
+                    color: #fff;
+                }
+            }
+        }
+        .priceLink {
+            a {
+                color: #fff;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
