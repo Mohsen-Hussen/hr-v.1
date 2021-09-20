@@ -115,7 +115,7 @@
         img {
             width: 83px;
             height: 65px;
-            margin-left: calc((100% - 83px) / 2);
+            margin: auto;
         }
         .card-title {
             font-weight: 700;
@@ -558,48 +558,6 @@
     }
 }
 
-/*********Feature Page ********/
-/*start feat*/
-.feat {
-    .card {
-        border: none;
-        @include BoxShadow(0px , 5px , 40px , 0px , rgba(145, 64, 64, 0.09));
-        img {
-            width: 83px;
-            height: 65px;
-        }
-        .card-title {
-            font-weight: 700;
-            font-size: 1.3rem;
-            color: $altColor;
-        }
-        a {
-            position: relative;
-            border: none;
-            span {
-                position: absolute;
-                width: 25px;
-                height: 2px;
-                background-color: $mainColor;
-                right: -20px;
-                bottom: 15px;
-            }
-            &:hover{
-                background-color: #fff;
-                color: $mainColor;
-                transform: translate(0, 10px);
-            }
-        }
-        &:hover {
-            cursor: pointer;
-            .card-title {
-                color: $mainColor;
-                transition: all 1s ease-in-out;
-            }
-        }
-    }
-}
-
 /*********Request demo Page ********/
 /*img*/ 
 .left {
@@ -906,7 +864,6 @@
 /*********details Page ********/
 /*start moduel first section*/
 .modFirst {
-    /*start carousel*/
     .carousel-item {
         height: 300px;
         position: relative;

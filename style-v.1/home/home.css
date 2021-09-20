@@ -295,7 +295,7 @@
     .feat .card img {
       width: 83px;
       height: 65px;
-      margin-left: calc((100% - 83px) / 2); }
+      margin: auto; }
     .feat .card .card-title {
       font-weight: 700;
       font-size: 1.3rem;
@@ -663,40 +663,6 @@
   .testimonials .cardPrimary .card-body small {
     font-size: 0.7rem; }
 
-/*********Feature Page ********/
-/*start feat*/
-.feat .card {
-  border: none;
-  box-shadow: 0px 5px 40px 0px rgba(145, 64, 64, 0.09);
-  -webkit-box-shadow: 0px 5px 40px 0px rgba(145, 64, 64, 0.09);
-  -moz-box-shadow: 0px 5px 40px 0px rgba(145, 64, 64, 0.09); }
-  .feat .card img {
-    width: 83px;
-    height: 65px; }
-  .feat .card .card-title {
-    font-weight: 700;
-    font-size: 1.3rem;
-    color: #191b64; }
-  .feat .card a {
-    position: relative;
-    border: none; }
-    .feat .card a span {
-      position: absolute;
-      width: 25px;
-      height: 2px;
-      background-color: #694dfd;
-      right: -20px;
-      bottom: 15px; }
-    .feat .card a:hover {
-      background-color: #fff;
-      color: #694dfd;
-      transform: translate(0, 10px); }
-  .feat .card:hover {
-    cursor: pointer; }
-    .feat .card:hover .card-title {
-      color: #694dfd;
-      transition: all 1s ease-in-out; }
-
 /*********Request demo Page ********/
 /*img*/
 .left .leftImg h1 {
@@ -917,27 +883,25 @@
 
 /*********details Page ********/
 /*start moduel first section*/
-.modFirst {
-  /*start carousel*/ }
-  .modFirst .carousel-item {
-    height: 300px;
-    position: relative; }
-    .modFirst .carousel-item::before {
-      content: '';
-      top: 0;
-      left: 0;
-      position: absolute;
-      background-color: #0000000f;
-      width: 100%;
-      height: 100%; }
-  .modFirst h2 {
-    color: #191b64;
-    font-weight: bold;
-    font-size: 3rem; }
-  .modFirst .carousel-control-prev-icon, .modFirst .carousel-control-next-icon {
-    background-color: #694dfd;
-    padding: 10px;
-    border-radius: 50%; }
+.modFirst .carousel-item {
+  height: 300px;
+  position: relative; }
+  .modFirst .carousel-item::before {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #0000000f;
+    width: 100%;
+    height: 100%; }
+.modFirst h2 {
+  color: #191b64;
+  font-weight: bold;
+  font-size: 3rem; }
+.modFirst .carousel-control-prev-icon, .modFirst .carousel-control-next-icon {
+  background-color: #694dfd;
+  padding: 10px;
+  border-radius: 50%; }
 
 .modSecond h5 {
   color: #694dfd;
