@@ -202,16 +202,16 @@
     font-weight: 900;
     letter-spacing: 2px; }
 
-/*****start terms page*****/
-.terms {
+/*****start Privacy page*****/
+.privacy {
   padding: 60px 0 0 0; }
-  .terms h1 {
+  .privacy h1 {
     color: #191b64;
     font-weight: bold;
     font-size: 2rem; }
-  .terms p {
+  .privacy p {
     color: #333333; }
 
-/*****end terms page*****/
+/*****end privacy page*****/
 
-/*# sourceMappingURL=terms.css.map */
+/*# sourceMappingURL=privacy.css.map */
