@@ -1,0 +1,14 @@
+@import '../partial/partial';
+
+/*****start terms page*****/
+.terms {
+    padding: 60px 0 0 0;
+    h1 {
+        color: $altColor;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    p {
+        color: rgb(51, 51, 51);
+    }
+}
