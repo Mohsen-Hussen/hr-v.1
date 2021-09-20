@@ -175,7 +175,6 @@
 
 /*style of main panner at all syb pages*/
 .heroBg .featBg {
-  background-image: url("../../img-v.1/feat-bg.jpg");
   background-size: cover;
   height: 45vh;
   width: 100vw;
@@ -854,10 +853,10 @@
     -webkit-box-shadow: 0px 0px 16px 0px rgba(4, 59, 80, 0.1);
     -moz-box-shadow: 0px 0px 16px 0px rgba(4, 59, 80, 0.1); }
     .contactCards .card .img {
-      width: 80px;
-      height: 80px;
+      width: 60px;
+      height: 60px;
       background-color: #eee;
-      padding: 15px;
+      padding: 10px;
       border-radius: 50%; }
     .contactCards .card .card-title a {
       color: #191b64;

@@ -813,10 +813,10 @@
         border-radius: 10px;
         @include BoxShadow(0px, 0px, 16px, 0px, rgba(4, 59, 80, 0.1));
         .img{
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
             background-color: #eee;
-            padding: 15px;
+            padding: 10px;
             border-radius: 50%;
         }
         .card-title {
