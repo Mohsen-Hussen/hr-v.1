@@ -1,0 +1,217 @@
+@font-face {
+  src: url(../fonts/Cairo-Black.ttf);
+  src: url(../fonts/Cairo-Bold.ttf);
+  src: url(../fonts/Cairo-Regular.ttf);
+  src: url(../fonts/Cairo-Light.ttf);
+  font-family: cairo; }
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'cairo', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+/* common classes*/
+.sectionTitle {
+  text-align: center;
+  padding-bottom: 30px; }
+  .sectionTitle h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #191b64; }
+    .sectionTitle h2::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 120px;
+      height: 1px;
+      background: #DCD9D9;
+      bottom: 1px;
+      left: calc(50% - 60px); }
+    .sectionTitle h2::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: #694dfd;
+      bottom: 0;
+      left: calc(50% - 20px); }
+
+/*active li at navbar*/
+.navActive {
+  color: #694dfd !important;
+  border-bottom: 2px solid #694dfd; }
+
+/* buttons */
+.customBtn {
+  border-color: #694dfd;
+  background-color: #694dfd;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px; }
+  .customBtn:hover {
+    background-color: #fff;
+    color: #694dfd;
+    transition: all 0.5s ease-in-out; }
+
+.altBtn {
+  border-color: #191b64;
+  background-color: #fff;
+  color: #191b64;
+  font-weight: bold;
+  letter-spacing: 1px; }
+  .altBtn:hover {
+    background-color: #191b64;
+    color: #fff;
+    transition: all 0.5s ease-in-out; }
+
+.coloredBtn {
+  border-color: #fff;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px; }
+  .coloredBtn:hover {
+    background-color: #fff;
+    color: #694dfd;
+    transition: all 0.5s ease-in-out; }
+
+.whiteBtn {
+  border-color: #694dfd;
+  background-color: #fff;
+  color: #694dfd;
+  font-weight: bold;
+  letter-spacing: 1px; }
+  .whiteBtn:hover {
+    background-color: #694dfd;
+    color: #fff;
+    transition: all 0.5s ease-in-out; }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .customBtn, .altBtn, .coloredBtn, .whiteBtn {
+    font-size: 0.8rem; } }
+/*box shadoow */
+/* Sweep To Top */
+.hvr-sweep-to-top {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+
+.hvr-sweep-to-top::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #694dfd;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
+  color: white; }
+
+.hvr-sweep-to-top:hover:after, .hvr-sweep-to-top:focus:after, .hvr-sweep-to-top:active:after {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1); }
+
+/*footer*/
+.foot {
+  background: url(../../img-v.1/footer-bg-3.png) no-repeat scroll center bottom transparent;
+  background-size: cover; }
+  .foot h4 {
+    color: #191b64;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: bold; }
+  .foot a {
+    text-decoration: none;
+    color: #191b64;
+    transition: all 0.5s ease; }
+    .foot a:hover {
+      color: #694dfd;
+      text-decoration: underline; }
+  .foot .fab {
+    font-size: 1.5rem;
+    color: #000;
+    transition: all 0.5s ease-in-out; }
+    .foot .fab:hover {
+      cursor: pointer; }
+  .foot .fa-facebook-f:hover {
+    color: #1877f2; }
+  .foot .fa-twitter:hover {
+    color: #1da1f2; }
+  .foot .fa-instagram:hover {
+    color: #e1306c; }
+  .foot .fa-linkedin-in:hover {
+    color: #0077b5; }
+  .foot .footInfo a:hover {
+    text-decoration: none; }
+  .foot .footInfo h1 {
+    font-size: 2rem; }
+  .foot .footInfo .fa-google-play {
+    font-size: 0.8rem;
+    color: #191b64; }
+
+/*style of main panner at all syb pages*/
+.heroBg .featBg {
+  background-size: cover;
+  height: 45vh;
+  width: 100vw;
+  background-position: center;
+  position: relative; }
+  .heroBg .featBg::before {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #00000066;
+    width: 100%;
+    height: 100%; }
+  .heroBg .featBg .card-title {
+    position: relative;
+    z-index: 50; }
+  .heroBg .featBg .breadText a {
+    color: #191b64;
+    font-weight: bold;
+    letter-spacing: 2px; }
+  .heroBg .featBg .card-img {
+    height: 60vh; }
+  .heroBg .featBg .contactText {
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 2px; }
+
+/*****start features Details page*****/
+.featuresDetails {
+  padding: 60px 0 0 0; }
+  .featuresDetails h1 {
+    color: #191b64;
+    font-weight: bold;
+    font-size: 2rem; }
+  .featuresDetails p {
+    color: #333333; }
+
+/*****end features Details page*****/
+
+/*# sourceMappingURL=featuresDetails.css.map */
